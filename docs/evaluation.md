@@ -1,10 +1,17 @@
+# Evaluation plan
 
-# Evaluation
+        ## Business objective
 
-This starter emphasizes clarity and handoff quality:
+        Reduce claim handling time and increase answer consistency.
 
-- Confirm API availability and metadata integrity in CI.
-- Validate domain outputs with subject matter review.
-- Track one primary KPI from the application card set: Grounded Recall.
-- For RAG/LLM projects, review grounded context quality before wider rollout.
-- For ML/analytics projects, compare outputs against a business baseline before productionizing.
+        ## Primary evaluation dimensions
+
+        - Grounded Answers: 93% (+5.8%)
+- Search Latency: 280ms (-60ms)
+- Handling Time: 12.3h (-2.7h)
+
+        ## What success looks like
+
+        - The workflow produces a better operational decision than the baseline.
+        - Outputs are understandable enough for the target user to act on.
+        - The project shows a believable path from research to production use.

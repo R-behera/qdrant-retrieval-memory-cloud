@@ -1,19 +1,16 @@
-Today I shipped **Qdrant Retrieval Memory Cloud**, a research-backed Vector Retrieval Infrastructure project inspired by **Qdrant**.
+Shipped **Claims Knowledge Retrieval Hub** today.
 
-        What I changed from the base research or repo:
-        1. Expose retrieval traces and grounding behavior through a product-style interface for vector retrieval infrastructure.
-2. Add production packaging, docs, health endpoints, and screenshots instead of stopping at a notebook or script.
-3. Turn retrieval quality into something operators can tune and explain to non-ML stakeholders.
+This one is built around a real workflow for **Claims operations teams**.
 
-I also reviewed the upstream repo and focused on gaps like: No obvious Python dependency manifest was found.
+Problem:
+Claims specialists waste time jumping across manuals, policy forms, and notes to answer routine claim questions.
 
-        Why it matters:
-        - easier to demo
-        - easier to operate
-        - easier to explain to product, analytics, and engineering teams
+What it helps decide:
+Find the right evidence and next-step guidance for each claim scenario.
 
-        Repo: https://github.com/R-behera/qdrant-retrieval-memory-cloud
-        Paper: https://github.com/qdrant/qdrant
-        Screenshot: demo/screenshot.png
+Why that matters:
+Reduce claim handling time and increase answer consistency.
 
-        #qdrant #vectordb #retrieval #rag #AI #MachineLearning #LLM #DataScience
+Repo: https://github.com/R-behera/qdrant-retrieval-memory-cloud
+
+#claims #retrieval #rag #insurance #AI #MachineLearning #DataScience

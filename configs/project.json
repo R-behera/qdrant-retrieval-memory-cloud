@@ -1,70 +1,54 @@
 {
   "slug": "qdrant-retrieval-memory-cloud",
-  "title": "Qdrant Retrieval Memory Cloud",
+  "title": "Claims Knowledge Retrieval Hub",
   "project_type": "rag",
-  "domain": "Vector Retrieval Infrastructure",
-  "summary": "Build a retrieval memory cloud for vector search, collection health, and latency-aware RAG storage operations.",
+  "domain": "Claims and Policy Retrieval",
+  "summary": "Give claims teams fast, citation-backed answers from adjuster manuals, policy language, and historical resolution notes.",
   "tags": [
-    "qdrant",
-    "vector-db",
+    "claims",
     "retrieval",
-    "rag"
+    "rag",
+    "insurance"
   ],
   "accent": "#2cc3c8",
   "secondary_accent": "#94a92c",
   "dashboard_metrics": [
     {
-      "label": "Grounded Recall",
-      "value": "82%",
-      "delta": "+4.6%"
+      "label": "Grounded Answers",
+      "value": "93%",
+      "delta": "+5.8%"
     },
     {
-      "label": "Citation Coverage",
-      "value": "87%",
-      "delta": "+3.1%"
+      "label": "Search Latency",
+      "value": "280ms",
+      "delta": "-60ms"
     },
     {
-      "label": "Latency",
-      "value": "214ms",
-      "delta": "-18ms"
+      "label": "Handling Time",
+      "value": "12.3h",
+      "delta": "-2.7h"
     }
   ],
   "sample_features": {
-    "query": "Summarize the highest priority risk and recommended next step.",
-    "audience": "analytics"
+    "claim_channel": "email",
+    "line_of_business": "auto",
+    "state": "CA",
+    "document_set_size": 18500,
+    "urgent_claim": true
   },
   "sample_metrics": {
-    "acquisition": 80.8,
-    "activation": 69.0,
-    "retention": 75.6,
-    "revenue": 136.6
+    "grounded_answer_rate": 0.93,
+    "search_latency_ms": 280,
+    "handling_time_hours": 12.3,
+    "repeat_search_rate": 0.18
   },
   "knowledge_base": [
-    "Qdrant Retrieval Memory Cloud is positioned as a Vector Retrieval Infrastructure starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.",
-    "The primary value proposition is: Build a retrieval memory cloud for vector search, collection health, and latency-aware RAG storage operations.",
-    "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.",
-    "Typical stakeholders include analytics, operations, product, and leadership teams working on qdrant, vector-db, retrieval, rag.",
-    "Source paper: Qdrant",
-    "Official repo: https://github.com/qdrant/qdrant",
-    "Production differentiation focus: Expose retrieval traces and grounding behavior through a product-style interface for vector retrieval infrastructure.; Add production packaging, docs, health endpoints, and screenshots instead of stopping at a notebook or script.; Turn retrieval quality into something operators can tune and explain to non-ML stakeholders."
+    "User: claims operations teams retrieving policy and adjuster guidance.",
+    "Primary pain: fragmented knowledge slows routine claim decisions.",
+    "Decision output: grounded answer with cited documents and next step.",
+    "Business impact: faster handling and more consistent answers."
   ],
-  "research_key": "qdrant-retrieval-memory-cloud",
-  "research_score": 9.735,
-  "paper_title": "Qdrant",
-  "paper_url": "https://github.com/qdrant/qdrant",
-  "repo_url": "https://github.com/qdrant/qdrant",
-  "repo_org": "qdrant",
-  "why_high_score": [
-    "Official or primary upstream repo with 30363 GitHub stars.",
-    "Active maintenance signal with recent push at 2026-04-15T20:07:52Z.",
-    "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/"
-  ],
-  "differentiation_hooks": [
-    "Expose retrieval traces and grounding behavior through a product-style interface for vector retrieval infrastructure.",
-    "Add production packaging, docs, health endpoints, and screenshots instead of stopping at a notebook or script.",
-    "Turn retrieval quality into something operators can tune and explain to non-ML stakeholders."
-  ],
-  "app_archetype": "navigator",
+  "app_archetype": "watchtower",
   "ui_profile": {
     "layout": "folio",
     "surface": "mist",
@@ -78,36 +62,36 @@
   },
   "app_modules": [
     {
-      "label": "Query 01",
-      "title": "Grounded Question",
-      "description": "Ask a domain question and retrieve the most relevant context from the local knowledge base.",
+      "label": "Claim KB 01",
+      "title": "Grounded Claim Question",
+      "description": "Ask a claim operations question and retrieve the most relevant evidence.",
       "endpoint": "/query",
       "input_mode": "text",
-      "cta": "Search Context",
-      "prefill": "What is the top priority recommendation for Qdrant Retrieval Memory Cloud?",
-      "hint": "Grounded answer and supporting contexts will appear here.",
+      "cta": "Search Hub",
+      "prefill": "What documentation is required before approving a high-value auto glass replacement claim in California?",
+      "hint": "Grounded answer appears here.",
       "span": "wide"
     },
     {
-      "label": "Query 02",
-      "title": "Retrieval Quality Review",
-      "description": "Compare retrieval-side metrics against a baseline before changing prompt or chunking strategy.",
+      "label": "Claim KB 02",
+      "title": "Knowledge Quality Review",
+      "description": "Compare answer quality and repeat-search behavior against the previous release.",
       "endpoint": "/analyze",
       "input_mode": "json",
       "cta": "Review Quality",
-      "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 80.8,\n    \"activation\": 69.0,\n    \"retention\": 75.6,\n    \"revenue\": 136.6\n  },\n  \"baseline\": {\n    \"acquisition\": 74.34,\n    \"activation\": 63.48,\n    \"retention\": 69.55,\n    \"revenue\": 125.67\n  }\n}",
-      "hint": "Quality delta summary will appear here.",
+      "prefill": "{\n  \"metrics\": {\n    \"grounded_answer_rate\": 93.0,\n    \"repeat_search_rate\": 18.0,\n    \"handling_time_hours\": 12.3\n  },\n  \"baseline\": {\n    \"grounded_answer_rate\": 87.2,\n    \"repeat_search_rate\": 22.5,\n    \"handling_time_hours\": 15.0\n  }\n}",
+      "hint": "Knowledge quality review appears here.",
       "span": "normal"
     },
     {
-      "label": "Query 03",
-      "title": "Response Playbook",
-      "description": "Generate a recommended follow-up workflow grounded in the project context.",
+      "label": "Claim KB 03",
+      "title": "Resolution Guidance",
+      "description": "Draft the next-step guidance for the claim specialist handling the case.",
       "endpoint": "/recommend",
       "input_mode": "json",
-      "cta": "Build Response",
-      "prefill": "{\n  \"prompt\": \"Recommend the next best action for Qdrant Retrieval Memory Cloud.\",\n  \"features\": {\n    \"query\": \"Summarize the highest priority risk and recommended next step.\",\n    \"audience\": \"analytics\"\n  },\n  \"metrics\": {\n    \"acquisition\": 80.8,\n    \"activation\": 69.0,\n    \"retention\": 75.6,\n    \"revenue\": 136.6\n  }\n}",
-      "hint": "Recommended workflow steps will appear here.",
+      "cta": "Draft Guidance",
+      "prefill": "{\n  \"prompt\": \"Write the next-step claim handling guidance for an urgent auto claim.\",\n  \"features\": {\n    \"line_of_business\": \"auto\",\n    \"state\": \"CA\"\n  },\n  \"metrics\": {\n    \"grounded_answer_rate\": 0.93,\n    \"search_latency_ms\": 280\n  }\n}",
+      "hint": "Claim guidance appears here.",
       "span": "normal"
     }
   ]
