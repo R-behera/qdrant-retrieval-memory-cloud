@@ -1,0 +1,104 @@
+{
+  "upstream": {
+    "owner": "qdrant",
+    "repo": "qdrant",
+    "source_url": "https://github.com/qdrant/qdrant",
+    "local_path": "/Users/Rb/Documents/LLM based projects /sources/qdrant__qdrant",
+    "branch": "master",
+    "default_branch": "master",
+    "commit": "eabee371fda447974a94d29fbaa675a6a596cc7b",
+    "fork_requested": false,
+    "fork_result": ""
+  },
+  "audit": {
+    "file_count": 1563,
+    "text_file_count": 1465,
+    "top_suffixes": [
+      [
+        ".rs",
+        1114
+      ],
+      [
+        ".py",
+        181
+      ],
+      [
+        ".json",
+        58
+      ],
+      [
+        ".sh",
+        32
+      ],
+      [
+        ".toml",
+        30
+      ],
+      [
+        ".comp",
+        22
+      ],
+      [
+        ".md",
+        21
+      ],
+      [
+        ".yaml",
+        21
+      ]
+    ],
+    "style_counts": {
+      "PascalCase": 39,
+      "other": 654,
+      "hidden": 11,
+      "snake_case": 808,
+      "kebab-case": 51
+    },
+    "token_hits": {
+      "TODO": [
+        "tools/unit-test-coverage.sh",
+        "tests/basic_sparse_test.sh",
+        "tests/shard-snapshot-api.sh",
+        "src/main.rs",
+        "src/common/health.rs",
+        "src/common/update.rs",
+        "src/common/snapshots.rs",
+        "src/common/pyroscope_state.rs"
+      ],
+      "FIXME": [
+        "lib/common/common/src/universal_io/disk_cache/controller.rs",
+        "lib/segment/src/index/field_index/geo_index/mod.rs",
+        "lib/segment/src/index/field_index/numeric_index/mod.rs",
+        "lib/segment/src/index/field_index/map_index/mod.rs"
+      ],
+      "XXX": [
+        "lib/api/src/grpc/conversions.rs",
+        "lib/segment/src/index/field_index/geo_hash.rs",
+        "lib/collection/src/collection/snapshots.rs",
+        "lib/collection/src/operations/conversions.rs"
+      ]
+    },
+    "findings": [
+      "No obvious Python dependency manifest was found.",
+      "Mixed filename conventions detected: PascalCase, kebab-case, snake_case.",
+      "Open maintenance markers detected: FIXME in 4 file(s), TODO in 117 file(s), XXX in 4 file(s).",
+      "Large files that may benefit from decomposition: docs/redoc/v1.4.x/openapi.json (8253 lines), docs/redoc/v1.3.x/openapi.json (8152 lines), docs/redoc/v1.2.x/openapi.json (8061 lines)."
+    ],
+    "strengths": [
+      "Repository has a top-level README.",
+      "Repository exposes a dedicated docs surface.",
+      "Repository appears to include a test surface.",
+      "Repository has GitHub Actions or another CI entry point.",
+      "Repository includes container packaging signals."
+    ],
+    "largest_files": [
+      "docs/redoc/v1.4.x/openapi.json (8253 lines)",
+      "docs/redoc/v1.3.x/openapi.json (8152 lines)",
+      "docs/redoc/v1.2.x/openapi.json (8061 lines)"
+    ],
+    "has_tests": true,
+    "has_docs": true,
+    "has_ci": true,
+    "has_docker": true
+  }
+}

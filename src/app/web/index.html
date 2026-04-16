@@ -1,0 +1,103 @@
+
+        <!doctype html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Qdrant Retrieval Memory Cloud</title>
+          <link rel="stylesheet" href="./styles.css">
+        </head>
+        <body class="surface-mist">
+          <div class="page layout-folio eyebrow-soft headline-compact modules-2 hero-align-split">
+            <section class="hero">
+              <div class="panel hero-copy">
+                <span class="eyebrow" data-health>Grounded Navigator</span>
+                <h1 id="project-title">Qdrant Retrieval Memory Cloud</h1>
+                <p id="project-summary" class="lead">Build a retrieval memory cloud for vector search, collection health, and latency-aware RAG storage operations.</p>
+                <ul id="project-tags" class="tag-list">
+                  <li>qdrant</li><li>vector-db</li><li>retrieval</li><li>rag</li>
+                </ul>
+              </div>
+              <div class="panel hero-side">
+                <div class="metric-grid">
+                  <article class='card'><span>Grounded Recall</span><strong>82%</strong><em>+4.6%</em></article>
+<article class='card'><span>Citation Coverage</span><strong>87%</strong><em>+3.1%</em></article>
+<article class='card'><span>Latency</span><strong>214ms</strong><em>-18ms</em></article>
+                </div>
+                <div class="mini-grid">
+                  <article class='mini-card'><span>Project Type</span><strong>RAG</strong></article><article class='mini-card'><span>Domain</span><strong>Vector Retrieval Infrastructure</strong></article><article class='mini-card'><span>Application</span><strong>Grounded Navigator</strong></article><article class='mini-card'><span>Deployment</span><strong>Docker + CI</strong></article>
+                </div>
+              </div>
+            </section>
+            <section class="app-grid">
+              <article class="panel module js-module span-wide">
+  <div class="module-header">
+    <span>Query 01</span>
+    <h2>Grounded Question</h2>
+    <p>Ask a domain question and retrieve the most relevant context from the local knowledge base.</p>
+  </div>
+  <textarea class="js-input module-input-text">What is the top priority recommendation for Qdrant Retrieval Memory Cloud?</textarea>
+  <div class="button-row">
+    <button class="js-run" data-endpoint="/query" data-input-mode="text">Search Context</button>
+  </div>
+  <pre class="js-output">Grounded answer and supporting contexts will appear here.</pre>
+</article>
+<article class="panel module js-module span-normal">
+          <div class="module-header">
+            <span>Query 02</span>
+            <h2>Retrieval Quality Review</h2>
+            <p>Compare retrieval-side metrics against a baseline before changing prompt or chunking strategy.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;metrics&quot;: {
+    &quot;acquisition&quot;: 80.8,
+    &quot;activation&quot;: 69.0,
+    &quot;retention&quot;: 75.6,
+    &quot;revenue&quot;: 136.6
+  },
+  &quot;baseline&quot;: {
+    &quot;acquisition&quot;: 74.34,
+    &quot;activation&quot;: 63.48,
+    &quot;retention&quot;: 69.55,
+    &quot;revenue&quot;: 125.67
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/analyze" data-input-mode="json">Review Quality</button>
+          </div>
+          <pre class="js-output">Quality delta summary will appear here.</pre>
+        </article>
+<article class="panel module js-module span-normal">
+          <div class="module-header">
+            <span>Query 03</span>
+            <h2>Response Playbook</h2>
+            <p>Generate a recommended follow-up workflow grounded in the project context.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;prompt&quot;: &quot;Recommend the next best action for Qdrant Retrieval Memory Cloud.&quot;,
+  &quot;features&quot;: {
+    &quot;query&quot;: &quot;Summarize the highest priority risk and recommended next step.&quot;,
+    &quot;audience&quot;: &quot;analytics&quot;
+  },
+  &quot;metrics&quot;: {
+    &quot;acquisition&quot;: 80.8,
+    &quot;activation&quot;: 69.0,
+    &quot;retention&quot;: 75.6,
+    &quot;revenue&quot;: 136.6
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/recommend" data-input-mode="json">Build Response</button>
+          </div>
+          <pre class="js-output">Recommended workflow steps will appear here.</pre>
+        </article>
+            </section>
+            <footer class="footer">
+              <span>Vector Retrieval Infrastructure • RAG • Grounded Navigator</span>
+              <span>qdrant-retrieval-memory-cloud</span>
+            </footer>
+          </div>
+          <script id="bootstrap-data" type="application/json">{"project": {"slug": "qdrant-retrieval-memory-cloud", "title": "Qdrant Retrieval Memory Cloud", "project_type": "rag", "domain": "Vector Retrieval Infrastructure", "summary": "Build a retrieval memory cloud for vector search, collection health, and latency-aware RAG storage operations.", "tags": ["qdrant", "vector-db", "retrieval", "rag"]}, "app_archetype": "navigator", "ui_profile": {"layout": "folio", "surface": "mist", "font_stack": "\"IBM Plex Sans\", \"Segoe UI\", sans-serif", "radius": 22, "shadow": 60, "eyebrow_style": "soft", "module_columns": 2, "hero_align": "split", "headline_mode": "compact"}, "app_modules": [{"label": "Query 01", "title": "Grounded Question", "description": "Ask a domain question and retrieve the most relevant context from the local knowledge base.", "endpoint": "/query", "input_mode": "text", "cta": "Search Context", "prefill": "What is the top priority recommendation for Qdrant Retrieval Memory Cloud?", "hint": "Grounded answer and supporting contexts will appear here.", "span": "wide"}, {"label": "Query 02", "title": "Retrieval Quality Review", "description": "Compare retrieval-side metrics against a baseline before changing prompt or chunking strategy.", "endpoint": "/analyze", "input_mode": "json", "cta": "Review Quality", "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 80.8,\n    \"activation\": 69.0,\n    \"retention\": 75.6,\n    \"revenue\": 136.6\n  },\n  \"baseline\": {\n    \"acquisition\": 74.34,\n    \"activation\": 63.48,\n    \"retention\": 69.55,\n    \"revenue\": 125.67\n  }\n}", "hint": "Quality delta summary will appear here.", "span": "normal"}, {"label": "Query 03", "title": "Response Playbook", "description": "Generate a recommended follow-up workflow grounded in the project context.", "endpoint": "/recommend", "input_mode": "json", "cta": "Build Response", "prefill": "{\n  \"prompt\": \"Recommend the next best action for Qdrant Retrieval Memory Cloud.\",\n  \"features\": {\n    \"query\": \"Summarize the highest priority risk and recommended next step.\",\n    \"audience\": \"analytics\"\n  },\n  \"metrics\": {\n    \"acquisition\": 80.8,\n    \"activation\": 69.0,\n    \"retention\": 75.6,\n    \"revenue\": 136.6\n  }\n}", "hint": "Recommended workflow steps will appear here.", "span": "normal"}], "sample_features": {"query": "Summarize the highest priority risk and recommended next step.", "audience": "analytics"}, "sample_metrics": {"acquisition": 80.8, "activation": 69.0, "retention": 75.6, "revenue": 136.6}, "knowledge_base": ["Qdrant Retrieval Memory Cloud is positioned as a Vector Retrieval Infrastructure starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.", "The primary value proposition is: Build a retrieval memory cloud for vector search, collection health, and latency-aware RAG storage operations.", "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.", "Typical stakeholders include analytics, operations, product, and leadership teams working on qdrant, vector-db, retrieval, rag.", "Source paper: Qdrant", "Official repo: https://github.com/qdrant/qdrant", "Production differentiation focus: Expose retrieval traces and grounding behavior through a product-style interface for vector retrieval infrastructure.; Add production packaging, docs, health endpoints, and screenshots instead of stopping at a notebook or script.; Turn retrieval quality into something operators can tune and explain to non-ML stakeholders."], "dashboard_metrics": [{"label": "Grounded Recall", "value": "82%", "delta": "+4.6%"}, {"label": "Citation Coverage", "value": "87%", "delta": "+3.1%"}, {"label": "Latency", "value": "214ms", "delta": "-18ms"}]}</script>
+          <script src="./app.js"></script>
+        </body>
+        </html>

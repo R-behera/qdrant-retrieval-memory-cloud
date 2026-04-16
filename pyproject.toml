@@ -1,0 +1,15 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qdrant-retrieval-memory-cloud"
+version = "0.1.0"
+description = "Build a retrieval memory cloud for vector search, collection health, and latency-aware RAG storage operations."
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

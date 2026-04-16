@@ -1,0 +1,114 @@
+{
+  "slug": "qdrant-retrieval-memory-cloud",
+  "title": "Qdrant Retrieval Memory Cloud",
+  "project_type": "rag",
+  "domain": "Vector Retrieval Infrastructure",
+  "summary": "Build a retrieval memory cloud for vector search, collection health, and latency-aware RAG storage operations.",
+  "tags": [
+    "qdrant",
+    "vector-db",
+    "retrieval",
+    "rag"
+  ],
+  "accent": "#2cc3c8",
+  "secondary_accent": "#94a92c",
+  "dashboard_metrics": [
+    {
+      "label": "Grounded Recall",
+      "value": "82%",
+      "delta": "+4.6%"
+    },
+    {
+      "label": "Citation Coverage",
+      "value": "87%",
+      "delta": "+3.1%"
+    },
+    {
+      "label": "Latency",
+      "value": "214ms",
+      "delta": "-18ms"
+    }
+  ],
+  "sample_features": {
+    "query": "Summarize the highest priority risk and recommended next step.",
+    "audience": "analytics"
+  },
+  "sample_metrics": {
+    "acquisition": 80.8,
+    "activation": 69.0,
+    "retention": 75.6,
+    "revenue": 136.6
+  },
+  "knowledge_base": [
+    "Qdrant Retrieval Memory Cloud is positioned as a Vector Retrieval Infrastructure starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.",
+    "The primary value proposition is: Build a retrieval memory cloud for vector search, collection health, and latency-aware RAG storage operations.",
+    "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.",
+    "Typical stakeholders include analytics, operations, product, and leadership teams working on qdrant, vector-db, retrieval, rag.",
+    "Source paper: Qdrant",
+    "Official repo: https://github.com/qdrant/qdrant",
+    "Production differentiation focus: Expose retrieval traces and grounding behavior through a product-style interface for vector retrieval infrastructure.; Add production packaging, docs, health endpoints, and screenshots instead of stopping at a notebook or script.; Turn retrieval quality into something operators can tune and explain to non-ML stakeholders."
+  ],
+  "research_key": "qdrant-retrieval-memory-cloud",
+  "research_score": 9.735,
+  "paper_title": "Qdrant",
+  "paper_url": "https://github.com/qdrant/qdrant",
+  "repo_url": "https://github.com/qdrant/qdrant",
+  "repo_org": "qdrant",
+  "why_high_score": [
+    "Official or primary upstream repo with 30363 GitHub stars.",
+    "Active maintenance signal with recent push at 2026-04-15T20:07:52Z.",
+    "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/"
+  ],
+  "differentiation_hooks": [
+    "Expose retrieval traces and grounding behavior through a product-style interface for vector retrieval infrastructure.",
+    "Add production packaging, docs, health endpoints, and screenshots instead of stopping at a notebook or script.",
+    "Turn retrieval quality into something operators can tune and explain to non-ML stakeholders."
+  ],
+  "app_archetype": "navigator",
+  "ui_profile": {
+    "layout": "folio",
+    "surface": "mist",
+    "font_stack": "\"IBM Plex Sans\", \"Segoe UI\", sans-serif",
+    "radius": 22,
+    "shadow": 60,
+    "eyebrow_style": "soft",
+    "module_columns": 2,
+    "hero_align": "split",
+    "headline_mode": "compact"
+  },
+  "app_modules": [
+    {
+      "label": "Query 01",
+      "title": "Grounded Question",
+      "description": "Ask a domain question and retrieve the most relevant context from the local knowledge base.",
+      "endpoint": "/query",
+      "input_mode": "text",
+      "cta": "Search Context",
+      "prefill": "What is the top priority recommendation for Qdrant Retrieval Memory Cloud?",
+      "hint": "Grounded answer and supporting contexts will appear here.",
+      "span": "wide"
+    },
+    {
+      "label": "Query 02",
+      "title": "Retrieval Quality Review",
+      "description": "Compare retrieval-side metrics against a baseline before changing prompt or chunking strategy.",
+      "endpoint": "/analyze",
+      "input_mode": "json",
+      "cta": "Review Quality",
+      "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 80.8,\n    \"activation\": 69.0,\n    \"retention\": 75.6,\n    \"revenue\": 136.6\n  },\n  \"baseline\": {\n    \"acquisition\": 74.34,\n    \"activation\": 63.48,\n    \"retention\": 69.55,\n    \"revenue\": 125.67\n  }\n}",
+      "hint": "Quality delta summary will appear here.",
+      "span": "normal"
+    },
+    {
+      "label": "Query 03",
+      "title": "Response Playbook",
+      "description": "Generate a recommended follow-up workflow grounded in the project context.",
+      "endpoint": "/recommend",
+      "input_mode": "json",
+      "cta": "Build Response",
+      "prefill": "{\n  \"prompt\": \"Recommend the next best action for Qdrant Retrieval Memory Cloud.\",\n  \"features\": {\n    \"query\": \"Summarize the highest priority risk and recommended next step.\",\n    \"audience\": \"analytics\"\n  },\n  \"metrics\": {\n    \"acquisition\": 80.8,\n    \"activation\": 69.0,\n    \"retention\": 75.6,\n    \"revenue\": 136.6\n  }\n}",
+      "hint": "Recommended workflow steps will appear here.",
+      "span": "normal"
+    }
+  ]
+}
